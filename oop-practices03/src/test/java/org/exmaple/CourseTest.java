@@ -11,7 +11,7 @@ public class CourseTest {
     @Test
     public void createTest() {
         Assertions.assertThatCode(() -> new Course("OOP", 3, "A+"))
-                .doesNotThrowAnyException();//
+                .doesNotThrowAnyException();
     }
 }
 
