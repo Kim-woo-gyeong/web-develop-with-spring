@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.calculate.PositiveNumber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,6 +37,24 @@ public class CustomApplicationServer {
                     String line;
                     while((line = br.readLine())!=null){
                         System.out.println(line);
+                    }
+
+                    HttpRequest httpRequest = new HttpRequest(br);
+                    if(httpRequest.isGetRequest() && httpRequest.matchPath("/calculate")) {
+                    	QueryStrings queryStrings = httpRequest.getQueryStrings();
+
+                    	int op1 = Integer.parseInt(queryStrings.getValue("operand1"));
+                    	String op = queryStrings.getValue("operator");
+                    	int op2 = Integer.parseInt(queryStrings.getValue("operand2"));
+
+                    	int result = Calculate.calculate(new PositiveNumber(op1), op, new PositiveNumber(op2));
+
+                    	byte[] body = String.valueOf(result).getBytes();
+
+                    	HttpResponse response = new HttpResponse(dos);
+
+                    	response.response200Headr("application/json", body.length);
+                    	response.responseBody(body);
                     }
                 }
             }
