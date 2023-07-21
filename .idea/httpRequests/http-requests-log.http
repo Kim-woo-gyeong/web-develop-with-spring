@@ -1,0 +1,45 @@
+GET http://localhost:8080/calculate?operand1=11&operator=-&operand2=55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T134501.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=11&operator=-&operand2=55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T122120.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=11&operator=-&operand2=55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T115302.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=11&operator= &operand2=55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T115250.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=11&operator= &operand2=55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-21T114745.200.json
+
+###
+
