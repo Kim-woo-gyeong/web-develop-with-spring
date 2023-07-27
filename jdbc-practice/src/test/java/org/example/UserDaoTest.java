@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 public class UserDaoTest {
     @BeforeEach
-    public void  setUp(){
+    public void setUp(){
         ResourceDatabasePopulator resourceDatabasePopulator = new ResourceDatabasePopulator();
 
         resourceDatabasePopulator.addScript(new ClassPathResource("db_schema.sql"));
@@ -22,7 +22,7 @@ public class UserDaoTest {
     public void createTest() throws SQLException {
         UserDao userDao = new UserDao();
         userDao.create(new User("wizard", "password", "name", "email")); // 저장
-        User user = userDao.findByUserId("hong"); // 조회
+        User user = userDao.findByUserId("wizard"); // 조회
 
         Assertions.assertThat(user).isEqualTo(new User("wizard", "password", "name", "email"));
     }

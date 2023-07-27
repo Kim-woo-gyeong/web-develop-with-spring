@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="Servlet 연습">
-      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/resources/db_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/test/java/org/example/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/test/resources/db_schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="jdbc 커넥션 프로그램 실습">
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/JdbcTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/PreParedStatementSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/RowMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-practice/src/test/java/org/example/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-practice/src/test/java/org/example/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +44,7 @@
         <option value="HTTP Request" />
         <option value="HTTP Public Environment File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -78,7 +74,6 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
     "last_opened_file_path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/jdbc-practice/src/test/resources",
@@ -360,7 +355,7 @@
       <workItem from="1689650755415" duration="3112000" />
       <workItem from="1690207323960" duration="715000" />
       <workItem from="1690331075243" duration="8057000" />
-      <workItem from="1690457568101" duration="5058000" />
+      <workItem from="1690457568101" duration="7971000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -467,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690458927117</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="jdbc 커넥션 프로그램 실습">
+      <created>1690469161589</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690469161589</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +500,8 @@
     <MESSAGE value="웹프로그램구현 생성 : tomcat 환경구성" />
     <MESSAGE value="CGI와 Servlet 프로젝트생성" />
     <MESSAGE value="Servlet 연습" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet 연습" />
+    <MESSAGE value="jdbc 커넥션 프로그램 실습" />
+    <option name="LAST_COMMIT_MESSAGE" value="jdbc 커넥션 프로그램 실습" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
