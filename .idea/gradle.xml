@@ -11,6 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/jdbc-practice" />
             <option value="$PROJECT_DIR$/object-oriented-practice02" />
             <option value="$PROJECT_DIR$/oop-practices" />
             <option value="$PROJECT_DIR$/oop-practices03" />

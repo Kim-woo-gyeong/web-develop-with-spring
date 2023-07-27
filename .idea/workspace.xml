@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="CGI와 Servlet 프로젝트생성">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-client.env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/Calculate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/CalculateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/WebApplicationServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/calculate/AdditionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/calculate/DivisionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/calculate/MultiplicationOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/calculate/PositiveNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/calculate/SubstractionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet/src/main/java/org/example/calculate/newArithmeticOperator.java" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="Servlet 연습">
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/java/org/example/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/main/resources/db_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/test/java/org/example/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-practice/src/test/resources/db_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +47,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="Class" />
         <option value="HTTP Public Environment File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,12 +81,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/servlet/src/main/java/org/example",
+    "last_opened_file_path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/jdbc-practice/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/servlet/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/jdbc-practice/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28850573",
@@ -105,6 +99,7 @@
       <recent name="org.example" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\jdbc-practice\src\test\resources" />
       <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\servlet\src\main\java\org\example" />
       <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\was-practices\src\main\java\org\example" />
     </key>
@@ -119,7 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebApplicationServer">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="object-oriented-practice.was-practices.main" />
@@ -208,6 +203,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.RequestLineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="object-oriented-practice.jdbc-practice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.UserDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -318,11 +328,13 @@
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="HTTP Request.test | #1" />
       <item itemvalue="JUnit.CourseTest" />
+      <item itemvalue="JUnit.UserDaoTest" />
       <item itemvalue="JUnit.RequestLineTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.78" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="JUnit.RequestLineTest" />
         <item itemvalue="Application.Main (1)" />
@@ -348,7 +360,7 @@
       <workItem from="1689650755415" duration="3112000" />
       <workItem from="1690207323960" duration="715000" />
       <workItem from="1690331075243" duration="8057000" />
-      <workItem from="1690457568101" duration="1037000" />
+      <workItem from="1690457568101" duration="5058000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -448,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690331326343</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Servlet 연습">
+      <created>1690458927117</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690458927117</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +497,8 @@
     <MESSAGE value="웹프로그램구현 생성" />
     <MESSAGE value="웹프로그램구현 생성 : tomcat 환경구성" />
     <MESSAGE value="CGI와 Servlet 프로젝트생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="CGI와 Servlet 프로젝트생성" />
+    <MESSAGE value="Servlet 연습" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet 연습" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
