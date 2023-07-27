@@ -65,6 +65,13 @@ project(':was-practices'){
 project(':servlet'){
 
     dependencies {
+        // embedded tomcat
+        implementation 'org.apache.tomcat.embed:tomcat-embed-core:8.5.42'
+        implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.5.42'
+
+        // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+        compileOnly("javax.servlet:javax.servlet-api:4.0.1")
+
         implementation('ch.qos.logback:logback-classic:0.9.26')
         testImplementation platform('org.junit:junit-bom:5.9.1')
         testImplementation 'org.junit.jupiter:junit-jupiter'
