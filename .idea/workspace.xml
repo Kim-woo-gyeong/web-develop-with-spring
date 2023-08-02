@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="jdbc 커넥션 프로그램 실습 : JDBC 커넥션 풀 적용">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 패턴프로그램 연습 : 프로젝트생성">
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/RequestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HealthCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HomeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +48,9 @@
       <list>
         <option value="HTTP Request" />
         <option value="HTTP Public Environment File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,6 +98,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.annotation" />
       <recent name="org.example" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -106,21 +117,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
+  <component name="RunManager" selected="JUnit.ReflectionTest">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="object-oriented-practice.was-practices.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="object-oriented-practice.was-practices.main" />
       <extension name="coverage">
@@ -180,6 +178,21 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="object-oriented-practice.mvc-practice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -316,16 +329,17 @@
     <list>
       <item itemvalue="Application.WebApplicationServer" />
       <item itemvalue="Application.ReconditionDemo" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="HTTP Request.test | #1" />
       <item itemvalue="JUnit.CourseTest" />
+      <item itemvalue="JUnit.ReflectionTest" />
       <item itemvalue="JUnit.UserDaoTest" />
       <item itemvalue="JUnit.RequestLineTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.78" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="JUnit.RequestLineTest" />
@@ -353,7 +367,7 @@
       <workItem from="1690207323960" duration="715000" />
       <workItem from="1690331075243" duration="8057000" />
       <workItem from="1690457568101" duration="8266000" />
-      <workItem from="1690892050964" duration="1194000" />
+      <workItem from="1690892050964" duration="4870000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -474,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690471432550</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="mvc 패턴프로그램 연습 : 프로젝트생성">
+      <created>1690940225906</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690940225906</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +528,8 @@
     <MESSAGE value="Servlet 연습" />
     <MESSAGE value="jdbc 커넥션 프로그램 실습" />
     <MESSAGE value="jdbc 커넥션 프로그램 실습 : JDBC 커넥션 풀 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="jdbc 커넥션 프로그램 실습 : JDBC 커넥션 풀 적용" />
+    <MESSAGE value="mvc 패턴프로그램 연습 : 프로젝트생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvc 패턴프로그램 연습 : 프로젝트생성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
