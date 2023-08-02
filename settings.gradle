@@ -6,4 +6,5 @@ include 'oop-practices04'
 include 'was-practices'
 include 'servlet'
 include 'jdbc-practice'
+include 'mvc-practice'
 
