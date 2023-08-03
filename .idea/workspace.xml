@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 패턴프로그램 연습 : Reflection에 대한 개념">
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/WebApplicationServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/webapps/home.jsp" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 패턴프로그램 연습 : 프런트 컨트롤러 패턴 실습">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/test.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +110,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebApplicationServer (1)">
+  <component name="RunManager" selected="JUnit.ReflectionTest">
     <configuration name="ReconditionDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ReconditionDemo" />
       <module name="object-oriented-practice.was-practices.main" />
@@ -327,9 +319,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="Application.WebApplicationServer (1)" />
         <item itemvalue="HTTP Request.test | #1" />
-        <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.RequestLineTest" />
       </list>
@@ -356,7 +348,7 @@
       <workItem from="1690331075243" duration="8057000" />
       <workItem from="1690457568101" duration="8266000" />
       <workItem from="1690892050964" duration="6151000" />
-      <workItem from="1691045686680" duration="7174000" />
+      <workItem from="1691045686680" duration="7968000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -491,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690965691268</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="mvc 패턴프로그램 연습 : 프런트 컨트롤러 패턴 실습">
+      <created>1691065199481</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1691065199481</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +525,8 @@
     <MESSAGE value="jdbc 커넥션 프로그램 실습 : JDBC 커넥션 풀 적용" />
     <MESSAGE value="mvc 패턴프로그램 연습 : 프로젝트생성" />
     <MESSAGE value="mvc 패턴프로그램 연습 : Reflection에 대한 개념" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvc 패턴프로그램 연습 : Reflection에 대한 개념" />
+    <MESSAGE value="mvc 패턴프로그램 연습 : 프런트 컨트롤러 패턴 실습" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvc 패턴프로그램 연습 : 프런트 컨트롤러 패턴 실습" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

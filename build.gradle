@@ -14,6 +14,7 @@ subprojects {
         testImplementation platform('org.junit:junit-bom:5.9.1')
         testImplementation 'org.junit.jupiter:junit-jupiter'
         testImplementation 'org.assertj:assertj-core:3.23.1'
+        implementation('ch.qos.logback:logback-classic:0.9.26')
     }
 
     test {
@@ -31,34 +32,25 @@ project(':object-oriented-practice02'){
         testImplementation platform('org.junit:junit-bom:5.9.1')
         testImplementation 'org.junit.jupiter:junit-jupiter'
         testImplementation 'org.assertj:assertj-core:3.23.1'
+
     }
 }
 
 project(':oop-practices03'){
 
     dependencies {
-        testImplementation platform('org.junit:junit-bom:5.9.1')
-        testImplementation 'org.junit.jupiter:junit-jupiter'
-        testImplementation 'org.assertj:assertj-core:3.23.1'
     }
 }
 
 project(':oop-practices04'){
 
     dependencies {
-        testImplementation platform('org.junit:junit-bom:5.9.1')
-        testImplementation 'org.junit.jupiter:junit-jupiter'
-        testImplementation 'org.assertj:assertj-core:3.23.1'
     }
 }
 
 project(':was-practices'){
 
     dependencies {
-        implementation('ch.qos.logback:logback-classic:0.9.26')
-        testImplementation platform('org.junit:junit-bom:5.9.1')
-        testImplementation 'org.junit.jupiter:junit-jupiter'
-        testImplementation 'org.assertj:assertj-core:3.23.1'
     }
 }
 
@@ -71,11 +63,6 @@ project(':servlet'){
 
         // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
         compileOnly("javax.servlet:javax.servlet-api:4.0.1")
-
-        implementation('ch.qos.logback:logback-classic:0.9.26')
-        testImplementation platform('org.junit:junit-bom:5.9.1')
-        testImplementation 'org.junit.jupiter:junit-jupiter'
-        testImplementation 'org.assertj:assertj-core:3.23.1'
     }
 }
 
@@ -86,23 +73,14 @@ project(':jdbc-practice'){
         implementation('com.zaxxer:HikariCP:5.0.1')
         // https://mvnrepository.com/artifact/com.h2database/h2
         testImplementation("com.h2database:h2:2.1.214")
-
-
-        testImplementation platform('org.junit:junit-bom:5.9.1')
-        testImplementation 'org.junit.jupiter:junit-jupiter'
-        testImplementation 'org.assertj:assertj-core:3.23.1'
     }
 }
 
 project(':mvc-practice'){
 
     dependencies {
-        implementation('org.reflections:reflections:0.9.10')
-        implementation('ch.qos.logback:logback-classic:0.9.26')
 
-        testImplementation platform('org.junit:junit-bom:5.9.1')
-        testImplementation 'org.junit.jupiter:junit-jupiter'
-        testImplementation 'org.assertj:assertj-core:3.23.1'
+        implementation('org.reflections:reflections:0.9.10')
 
         // embedded tomcat
         implementation 'org.apache.tomcat.embed:tomcat-embed-core:8.5.42'
