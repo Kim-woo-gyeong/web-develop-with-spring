@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 패턴프로그램 연습 : 프로젝트생성">
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/RequestMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/RequestMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HealthCheckController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HomeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 패턴프로그램 연습 : Reflection에 대한 개념">
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/WebApplicationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc-practice/webapps/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/test.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +60,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/mvc-practice/webapps/home.jsp" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -88,7 +89,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/mvc-practice/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28850573",
     "settings.editor.selected.configurable": "tasks.servers",
@@ -117,36 +118,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReflectionTest">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="object-oriented-practice.was-practices.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="object-oriented-practice.was-practices.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WebApplicationServer (1)">
     <configuration name="ReconditionDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ReconditionDemo" />
       <module name="object-oriented-practice.was-practices.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplicationServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.WebApplicationServer" />
+      <module name="object-oriented-practice.mvc-practice.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -329,7 +317,7 @@
     <list>
       <item itemvalue="Application.WebApplicationServer" />
       <item itemvalue="Application.ReconditionDemo" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.WebApplicationServer (1)" />
       <item itemvalue="HTTP Request.test | #1" />
       <item itemvalue="JUnit.CourseTest" />
       <item itemvalue="JUnit.ReflectionTest" />
@@ -339,11 +327,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebApplicationServer (1)" />
+        <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="JUnit.RequestLineTest" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +355,8 @@
       <workItem from="1690207323960" duration="715000" />
       <workItem from="1690331075243" duration="8057000" />
       <workItem from="1690457568101" duration="8266000" />
-      <workItem from="1690892050964" duration="4870000" />
+      <workItem from="1690892050964" duration="6151000" />
+      <workItem from="1691045686680" duration="7174000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -495,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690940225906</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="mvc 패턴프로그램 연습 : Reflection에 대한 개념">
+      <created>1690965691268</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690965691268</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +525,8 @@
     <MESSAGE value="jdbc 커넥션 프로그램 실습" />
     <MESSAGE value="jdbc 커넥션 프로그램 실습 : JDBC 커넥션 풀 적용" />
     <MESSAGE value="mvc 패턴프로그램 연습 : 프로젝트생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvc 패턴프로그램 연습 : 프로젝트생성" />
+    <MESSAGE value="mvc 패턴프로그램 연습 : Reflection에 대한 개념" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvc 패턴프로그램 연습 : Reflection에 대한 개념" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
