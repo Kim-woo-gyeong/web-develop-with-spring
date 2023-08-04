@@ -3,12 +3,28 @@ package org.example.model;
 import java.util.Objects;
 
 public class User {
-    private String uesrId;
+    private String userId;
     private String name;
 
 
-    public User(String uesrId, String name) {
-        this.uesrId = uesrId;
+    public User(String userId, String name) {
+        this.userId = userId;
+        this.name = name;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -21,11 +37,11 @@ public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return Objects.equals(uesrId, user.uesrId) && Objects.equals(name, user.name);
+        return Objects.equals(userId, user.userId) && Objects.equals(name, user.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(uesrId, name);
+        return Objects.hash(userId, name);
     }
 }
