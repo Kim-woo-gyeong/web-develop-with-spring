@@ -10,4 +10,8 @@ public class UserRepository {
     public static void save(User user){
         users.put(user.getUserId(), user);
     }
+
+    public static Collection<User> findAll(){
+        return users.values();
+    }
 }

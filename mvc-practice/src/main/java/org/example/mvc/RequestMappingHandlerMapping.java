@@ -1,12 +1,7 @@
 package org.example.mvc;
 
-import org.apache.coyote.Request;
-import org.example.annotation.RequestMapping;
 import org.example.annotation.RequestMethod;
-import org.example.mvc.controller.Controller;
-import org.example.mvc.controller.ForwardController;
-import org.example.mvc.controller.HomeController;
-import org.example.mvc.controller.UserListController;
+import org.example.mvc.controller.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,12 +26,12 @@ public class RequestMappingHandlerMapping {
 
         /* AS-IS */
         // 객체끼리의 비교이기 때문에 equals hashCode 가 필요하다.
-        mappings.put(new HandelerKey(RequestMethod.GET, "/"), new HomeController());
-        mappings.put(new HandelerKey(RequestMethod.GET, "/users"), new UserListController());
-        mappings.put(new HandelerKey(RequestMethod.POST, "/users"), new UserCreateController());
+        mappings.put(new HandelerKey("/", RequestMethod.GET), new HomeController());
+        mappings.put(new HandelerKey("/users", RequestMethod.GET), new UserListController());
+        mappings.put(new HandelerKey("/users", RequestMethod.POST), new UserCreateController());
 
         // forward 란 ? 단순하게 요청이 들어오면 users/form 으로 이동해달라.
-        mappings.put(new HandelerKey(RequestMethod.GET, "/users/form"), new ForwardController("/user/form.jsp"));
+        mappings.put(new HandelerKey("/users/form", RequestMethod.GET), new ForwardController("/user/form"));
     }
 
     public Controller findHandler(HandelerKey uriPath){

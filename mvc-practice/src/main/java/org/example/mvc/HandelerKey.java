@@ -8,7 +8,7 @@ public class HandelerKey {
     private final RequestMethod requestMethod;
     private final String uriPath;
 
-    public HandelerKey(RequestMethod requestMethod, String uriPath) {
+    public HandelerKey(String uriPath, RequestMethod requestMethod) {
         this.requestMethod = requestMethod;
         this.uriPath = uriPath;
     }

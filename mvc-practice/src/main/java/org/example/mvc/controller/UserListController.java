@@ -1,5 +1,7 @@
 package org.example.mvc.controller;
 
+import org.example.mvc.repository.UserRepository;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -11,7 +13,7 @@ public class UserListController implements Controller{
         // user list 를 return 하는 controller.
         // jsp 로 이동을 시킬때 users 라는 정보를 전달해줘야 한다.
 
-        request.setAttribute("users", List.of());
-        return "/user/list.jsp";
+        request.setAttribute("users", UserRepository.findAll());
+        return "/user/list";
     }
 }

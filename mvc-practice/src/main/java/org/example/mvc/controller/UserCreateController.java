@@ -1,4 +1,4 @@
-package org.example.mvc;
+package org.example.mvc.controller;
 
 import org.example.model.User;
 import org.example.mvc.controller.Controller;
