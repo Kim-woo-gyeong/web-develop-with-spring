@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html lang="kr">
 <head>
+    <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
     <title>list</title>
 </head>

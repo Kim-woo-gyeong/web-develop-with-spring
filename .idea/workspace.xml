@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 프로그램 : DispatcherServlet + forward + redirect">
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/filter/CharacterEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/view/JspView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/view/JspViewResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/view/RedirectView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/view/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/view/ViewResolver.java" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 프로그램 : DispatcherServlet + ViewResolver 로 forward와 redirect 분기처리.">
+      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/SimpleControllerHandlerAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/HandelerKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/HandelerKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/UserCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/UserCreateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/UserListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/UserListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/view/ModelAndView.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/view/ModelAndView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-practice/webapps/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/webapps/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/test.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,8 +329,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WebApplicationServer (1)" />
-        <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="HTTP Request.test | #1" />
+        <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.RequestLineTest" />
       </list>
@@ -364,7 +359,8 @@
       <workItem from="1690892050964" duration="6151000" />
       <workItem from="1691045686680" duration="11297000" />
       <workItem from="1691116349322" duration="6031000" />
-      <workItem from="1691555986642" duration="8077000" />
+      <workItem from="1691555986642" duration="11752000" />
+      <workItem from="1691642951038" duration="1285000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -520,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691137693895</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="mvc 프로그램 : DispatcherServlet + ViewResolver 로 forward와 redirect 분기처리.">
+      <created>1691569256875</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1691569256875</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +561,8 @@
     <MESSAGE value="mvc 패턴프로그램 연습 : 프런트 컨트롤러 패턴 실습" />
     <MESSAGE value="그래들 세팅 수정" />
     <MESSAGE value="mvc 프로그램 : DispatcherServlet + forward + redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvc 프로그램 : DispatcherServlet + forward + redirect" />
+    <MESSAGE value="mvc 프로그램 : DispatcherServlet + ViewResolver 로 forward와 redirect 분기처리." />
+    <option name="LAST_COMMIT_MESSAGE" value="mvc 프로그램 : DispatcherServlet + ViewResolver 로 forward와 redirect 분기처리." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

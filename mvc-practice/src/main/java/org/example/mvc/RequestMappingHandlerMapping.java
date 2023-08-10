@@ -2,15 +2,18 @@ package org.example.mvc;
 
 import org.example.annotation.RequestMethod;
 import org.example.mvc.controller.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
 
 // Dispatcher -> HandlerMapping 을 거쳐서 Controller 를 선택.
 //
-public class RequestMappingHandlerMapping {
+public class RequestMappingHandlerMapping implements HandlerMapping{
+    private static final Logger log = LoggerFactory.getLogger(RequestMappingHandlerMapping.class);
    // private Map<String, Controller> mappings = new HashMap<>();
-   private Map<HandelerKey, Controller> mappings = new HashMap<>();
+   private Map<HandlerKey, Controller> mappings = new HashMap<>();
     void init(){
         /* TO-BE
 
@@ -26,15 +29,19 @@ public class RequestMappingHandlerMapping {
 
         /* AS-IS */
         // 객체끼리의 비교이기 때문에 equals hashCode 가 필요하다.
-        mappings.put(new HandelerKey("/", RequestMethod.GET), new HomeController());
-        mappings.put(new HandelerKey("/users", RequestMethod.GET), new UserListController());
-        mappings.put(new HandelerKey("/users", RequestMethod.POST), new UserCreateController());
+        mappings.put(new HandlerKey("/", RequestMethod.GET), new HomeController());
+        mappings.put(new HandlerKey("/users", RequestMethod.GET), new UserListController());
+        mappings.put(new HandlerKey("/users", RequestMethod.POST), new UserCreateController());
 
         // forward 란 ? 단순하게 요청이 들어오면 users/form 으로 이동해달라.
-        mappings.put(new HandelerKey("/users/form", RequestMethod.GET), new ForwardController("/user/form"));
+        mappings.put(new HandlerKey("/users/form", RequestMethod.GET), new ForwardController("/user/form"));
+
+        mappings.keySet().forEach(path ->
+                log.info("url path: [{}], controller: [{}]", path, mappings.get(path).getClass()));
     }
 
-    public Controller findHandler(HandelerKey uriPath){
+    @Override
+    public Controller findHandler(HandlerKey uriPath){
 
         return mappings.get(uriPath);
     }
