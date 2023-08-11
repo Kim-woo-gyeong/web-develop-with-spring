@@ -1,13 +1,12 @@
 package org.example.mvc.controller;
 
 import org.example.model.User;
-import org.example.mvc.controller.Controller;
 import org.example.mvc.repository.UserRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class UserCreateController implements Controller {
+public class UserCreateController implements ControllerHandler {
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
         // user 추가

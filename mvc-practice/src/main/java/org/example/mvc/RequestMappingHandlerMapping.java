@@ -1,6 +1,6 @@
 package org.example.mvc;
 
-import org.example.annotation.RequestMethod;
+import org.example.mvc.annotation.RequestMethod;
 import org.example.mvc.controller.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +13,7 @@ import java.util.Map;
 public class RequestMappingHandlerMapping implements HandlerMapping{
     private static final Logger log = LoggerFactory.getLogger(RequestMappingHandlerMapping.class);
    // private Map<String, Controller> mappings = new HashMap<>();
-   private Map<HandlerKey, Controller> mappings = new HashMap<>();
+   private Map<HandlerKey, ControllerHandler> mappings = new HashMap<>();
     void init(){
         /* TO-BE
 
@@ -29,19 +29,19 @@ public class RequestMappingHandlerMapping implements HandlerMapping{
 
         /* AS-IS */
         // 객체끼리의 비교이기 때문에 equals hashCode 가 필요하다.
-        mappings.put(new HandlerKey("/", RequestMethod.GET), new HomeController());
-        mappings.put(new HandlerKey("/users", RequestMethod.GET), new UserListController());
+        //mappings.put(new HandlerKey("/", RequestMethod.GET), new HomeController());
+        //mappings.put(new HandlerKey("/users", RequestMethod.GET), new UserListController());
         mappings.put(new HandlerKey("/users", RequestMethod.POST), new UserCreateController());
 
         // forward 란 ? 단순하게 요청이 들어오면 users/form 으로 이동해달라.
         mappings.put(new HandlerKey("/users/form", RequestMethod.GET), new ForwardController("/user/form"));
 
-        mappings.keySet().forEach(path ->
-                log.info("url path: [{}], controller: [{}]", path, mappings.get(path).getClass()));
+//        mappings.keySet().forEach(path ->
+//                log.info("url path: [{}], controller: [{}]", path, mappings.get(path).getClass()));
     }
 
     @Override
-    public Controller findHandler(HandlerKey uriPath){
+    public ControllerHandler findHandler(HandlerKey uriPath){
 
         return mappings.get(uriPath);
     }

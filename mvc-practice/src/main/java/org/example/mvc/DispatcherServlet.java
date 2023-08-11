@@ -1,7 +1,6 @@
 package org.example.mvc;
 
-import org.example.annotation.RequestMethod;
-import org.example.mvc.controller.Controller;
+import org.example.mvc.annotation.RequestMethod;
 import org.example.mvc.view.JspViewResolver;
 import org.example.mvc.view.ModelAndView;
 import org.example.mvc.view.View;
@@ -29,9 +28,12 @@ public class DispatcherServlet extends HttpServlet {
         RequestMappingHandlerMapping rmhm = new RequestMappingHandlerMapping();
         rmhm.init();
 
-        handlerMappings = List.of(rmhm);
+        AnnotationHandlerMapping ahm = new AnnotationHandlerMapping("org.example");
+        ahm.initialize();
+
+        handlerMappings = List.of(rmhm,ahm);
+        handlerAdapters = List.of(new SimpleControllerHandlerAdapter(), new AnnotationHandlerAdapter());
         viewResolvers = Collections.singletonList(new JspViewResolver());
-        handlerAdapters = List.of(new SimpleControllerHandlerAdapter());
     }
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException {
@@ -42,6 +44,7 @@ public class DispatcherServlet extends HttpServlet {
             // To-Be
             //Controller handler = rmhm.findHandler(new HandlerKey(request.getRequestURI(), RequestMethod.valueOf(request.getMethod())));
             //As-Is : Controller 뿐 아니라 동적으로 관리하기 위함.
+
             Object handler = handlerMappings.stream()
                     .filter(hm -> hm.findHandler(new HandlerKey(requestURI, requestMethod)) != null)
                     .map(hm -> hm.findHandler(new HandlerKey(requestURI, requestMethod)))
@@ -52,13 +55,14 @@ public class DispatcherServlet extends HttpServlet {
             //String viewName = handler.handleRequest(request, response);
             //viewResolver에게 위임.
             //RequestDispatcher requestDispatcher = request.getRequestDispatcher(viewName);
-
             HandlerAdapter handlerAdapter = handlerAdapters.stream()
                         .filter(ha -> ha.supports(handler))
                         .findFirst()
                         .orElseThrow(() -> new ServletException("No adapter for handler [" + handler + "]"));
 
             ModelAndView modelAndView = handlerAdapter.handle(request, response, handler);
+            log.info("[DispatcherServlet] modelAndView = [{}]", modelAndView);
+
 
             // To-Be
             //requestDispatcher.forward(request,response);
