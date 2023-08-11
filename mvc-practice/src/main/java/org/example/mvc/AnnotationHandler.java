@@ -24,6 +24,8 @@ public class AnnotationHandler{
         Object targetObject = defaultConstructor.newInstance();
         log.info("[AnnotationHandler] targetMethod = {}", targetMethod);
 
+        // request, response 오타 조심..
+        // [argument type mismatch] 오타로 인해 해당 오류 계속해서 발생했음 ㅠ-ㅠ
         return (String)targetMethod.invoke(targetObject, request, response);
     }
 }
