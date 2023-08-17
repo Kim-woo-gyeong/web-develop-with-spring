@@ -4,29 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 프로그램 : DispatcherServlet + HandlerAdapter 추가">
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/AnnotationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/AnnotationHandlerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/AnnotationHandlerMapping.java" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 프로그램 : 오타 조심 주석추가">
+      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/annotation/Inject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/annotation/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/di/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/di/BeanFactoryUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/di-practice/src/test/java/org/example/BeanFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/annotation/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/annotation/RequestMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/RequestMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/annotation/RequestMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/annotation/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/annotation/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HealthCheckController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/controller/HomeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/HandlerKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/HandlerKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/SimpleControllerHandlerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/SimpleControllerHandlerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/ControllerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/ForwardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/ForwardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/UserCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/UserCreateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/UserListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/src/main/java/org/example/mvc/controller/UserListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/webapps/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/webapps/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-practice/webapps/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-practice/webapps/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +48,9 @@
       <list>
         <option value="HTTP Request" />
         <option value="HTTP Public Environment File" />
-        <option value="AnnotationType" />
         <option value="package-info" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -101,7 +91,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/mvc-practice/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/di-practice/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28850573",
@@ -134,7 +124,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebApplicationServer (1)">
+  <component name="RunManager" selected="JUnit.BeanFactoryTest">
     <configuration name="ReconditionDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ReconditionDemo" />
       <module name="object-oriented-practice.was-practices.main" />
@@ -177,6 +167,21 @@
     <configuration name="test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="BeanFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="object-oriented-practice.di-practice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.BeanFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CourseTest" type="JUnit" factoryName="JUnit">
       <module name="object-oriented-practice.oop-practices03.main" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -197,21 +202,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RequestLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="object-oriented-practice.was-practices.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.RequestLineTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -336,18 +326,18 @@
       <item itemvalue="Application.WebApplicationServer (1)" />
       <item itemvalue="HTTP Request.test | #1" />
       <item itemvalue="JUnit.CourseTest" />
+      <item itemvalue="JUnit.BeanFactoryTest" />
       <item itemvalue="JUnit.ReflectionTest" />
       <item itemvalue="JUnit.UserDaoTest" />
-      <item itemvalue="JUnit.RequestLineTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.78" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeanFactoryTest" />
         <item itemvalue="Application.WebApplicationServer (1)" />
         <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.RequestLineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +367,8 @@
       <workItem from="1691555986642" duration="11752000" />
       <workItem from="1691642951038" duration="7433000" />
       <workItem from="1691674286856" duration="4000" />
-      <workItem from="1691733310861" duration="10113000" />
+      <workItem from="1691733310861" duration="10968000" />
+      <workItem from="1692231159083" duration="6157000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -547,7 +538,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691646153593</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="mvc 프로그램 : DispatcherServlet + AnnotationHandler 추가">
+      <created>1691770090925</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1691770090925</updated>
+    </task>
+    <task id="LOCAL-00026" summary="mvc 프로그램 : 오타 조심 주석추가">
+      <created>1691770413833</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1691770413833</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +592,9 @@
     <MESSAGE value="mvc 프로그램 : DispatcherServlet + forward + redirect" />
     <MESSAGE value="mvc 프로그램 : DispatcherServlet + ViewResolver 로 forward와 redirect 분기처리." />
     <MESSAGE value="mvc 프로그램 : DispatcherServlet + HandlerAdapter 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvc 프로그램 : DispatcherServlet + HandlerAdapter 추가" />
+    <MESSAGE value="mvc 프로그램 : DispatcherServlet + AnnotationHandler 추가" />
+    <MESSAGE value="mvc 프로그램 : 오타 조심 주석추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvc 프로그램 : 오타 조심 주석추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

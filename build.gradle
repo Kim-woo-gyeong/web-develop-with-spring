@@ -92,3 +92,10 @@ project(':mvc-practice'){
 
     }
 }
+
+project(':di-practice'){
+
+    dependencies {
+        implementation('org.reflections:reflections:0.10.2')
+    }
+}
