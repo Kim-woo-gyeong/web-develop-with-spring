@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="의존성주입연습(di)">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="게시판만들기 - 프로젝트생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,26 +69,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/oop-practices/src/main/java/diPractice/org/example",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/board-create-practice/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.28850573",
-    "settings.editor.selected.configurable": "tasks.servers",
-    "spring.configuration.checksum": "60ad6309ed5ebe3ee0d3ceea70fbb623",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/82109/IdeaProjects/web-develop-with-spring/oop-practices/src/main/java/diPractice/org/example&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/82109/IdeaProjects/web-develop-with-spring/board-create-practice/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28850573&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;tasks.servers&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;60ad6309ed5ebe3ee0d3ceea70fbb623&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.mvc" />
@@ -106,6 +104,7 @@
       <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\jdbc-practice\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="useCase.org.example" />
       <recent name="diPractice.org.example" />
       <recent name="org.example" />
     </key>
@@ -360,7 +359,7 @@
       <workItem from="1691674286856" duration="4000" />
       <workItem from="1691733310861" duration="10968000" />
       <workItem from="1692231159083" duration="9792000" />
-      <workItem from="1692319354667" duration="864000" />
+      <workItem from="1692319354667" duration="3122000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -551,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692242646472</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="게시판만들기 - 프로젝트생성">
+      <created>1692320295978</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1692320295978</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="객체지향연습 : 학점계산기" />
     <MESSAGE value="객체지향연습 : 학점계산기(일급컬렉션)" />
     <MESSAGE value="객체지향연습 : 학점계산기 수정" />
     <MESSAGE value="객체지향연습 : 학점계산기 수정22" />
@@ -594,7 +599,8 @@
     <MESSAGE value="mvc 프로그램 : DispatcherServlet + AnnotationHandler 추가" />
     <MESSAGE value="mvc 프로그램 : 오타 조심 주석추가" />
     <MESSAGE value="의존성주입연습(di)" />
-    <option name="LAST_COMMIT_MESSAGE" value="의존성주입연습(di)" />
+    <MESSAGE value="게시판만들기 - 프로젝트생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="게시판만들기 - 프로젝트생성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
