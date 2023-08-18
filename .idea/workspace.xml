@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="mvc 프로그램 : 오타 조심 주석추가">
-      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/annotation/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/annotation/Inject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/annotation/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/di/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/di/BeanFactoryUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/di-practice/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/di-practice/src/test/java/org/example/BeanFactoryTest.java" afterDir="false" />
+    <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="의존성주입연습(di)">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,12 +77,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/mvc-practice/src/main/java/org/example/mvc",
+    "last_opened_file_path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/oop-practices/src/main/java/diPractice/org/example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/di-practice/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/board-create-practice/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28850573",
@@ -108,12 +99,14 @@
       <recent name="org.example" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\oop-practices\src\main\java\diPractice\org\example" />
+      <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\oop-practices\src\main\java\mvcPractice\org\example" />
+      <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\oop-practices\src\main\java\mvcPractice" />
       <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\mvc-practice\src\main\java\org\example\mvc" />
       <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\jdbc-practice\src\test\resources" />
-      <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\servlet\src\main\java\org\example" />
-      <recent name="C:\Users\82109\IdeaProjects\web-develop-with-spring\was-practices\src\main\java\org\example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="diPractice.org.example" />
       <recent name="org.example" />
     </key>
   </component>
@@ -124,7 +117,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BeanFactoryTest">
+  <component name="RunManager" selected="Application.mvcPractice.org.example.WebApplicationServer">
     <configuration name="ReconditionDemo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ReconditionDemo" />
       <module name="object-oriented-practice.was-practices.main" />
@@ -157,6 +150,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mvcPractice.org.example.WebApplicationServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mvcPractice.org.example.WebApplicationServer" />
+      <module name="object-oriented-practice.oop-practices.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mvcPractice.org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,21 +208,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="object-oriented-practice.jdbc-practice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.UserDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -323,21 +314,21 @@
     <list>
       <item itemvalue="Application.WebApplicationServer" />
       <item itemvalue="Application.ReconditionDemo" />
+      <item itemvalue="Application.mvcPractice.org.example.WebApplicationServer" />
       <item itemvalue="Application.WebApplicationServer (1)" />
       <item itemvalue="HTTP Request.test | #1" />
       <item itemvalue="JUnit.CourseTest" />
       <item itemvalue="JUnit.BeanFactoryTest" />
       <item itemvalue="JUnit.ReflectionTest" />
-      <item itemvalue="JUnit.UserDaoTest" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.78" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mvcPractice.org.example.WebApplicationServer" />
         <item itemvalue="JUnit.BeanFactoryTest" />
         <item itemvalue="Application.WebApplicationServer (1)" />
         <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="JUnit.ReflectionTest" />
-        <item itemvalue="JUnit.UserDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +359,8 @@
       <workItem from="1691642951038" duration="7433000" />
       <workItem from="1691674286856" duration="4000" />
       <workItem from="1691733310861" duration="10968000" />
-      <workItem from="1692231159083" duration="6157000" />
+      <workItem from="1692231159083" duration="9792000" />
+      <workItem from="1692319354667" duration="864000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
@@ -552,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691770413833</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="의존성주입연습(di)">
+      <created>1692242646472</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1692242646472</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +593,8 @@
     <MESSAGE value="mvc 프로그램 : DispatcherServlet + HandlerAdapter 추가" />
     <MESSAGE value="mvc 프로그램 : DispatcherServlet + AnnotationHandler 추가" />
     <MESSAGE value="mvc 프로그램 : 오타 조심 주석추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvc 프로그램 : 오타 조심 주석추가" />
+    <MESSAGE value="의존성주입연습(di)" />
+    <option name="LAST_COMMIT_MESSAGE" value="의존성주입연습(di)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -603,6 +603,11 @@
           <url>file://$PROJECT_DIR$/oop-practices/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/board-create-practice/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
