@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a631584e-8750-43a7-bde2-5d00b2743779" name="Changes" comment="의존성주입연습(di)">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "C:/Users/82109/IdeaProjects/web-develop-with-spring/board-create-practice/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28850573",
     "settings.editor.selected.configurable": "tasks.servers",
@@ -361,6 +359,7 @@
       <workItem from="1691733310861" duration="10968000" />
       <workItem from="1692231159083" duration="9792000" />
       <workItem from="1692319354667" duration="864000" />
+      <workItem from="1692594825187" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향연습 : 학점계산기">
       <created>1688553933186</created>
