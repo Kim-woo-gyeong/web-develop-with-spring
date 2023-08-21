@@ -7,20 +7,12 @@
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/board-create-practice" />
-            <option value="$PROJECT_DIR$/di-practice" />
-            <option value="$PROJECT_DIR$/jdbc-practice" />
-            <option value="$PROJECT_DIR$/mvc-practice" />
             <option value="$PROJECT_DIR$/object-oriented-practice02" />
             <option value="$PROJECT_DIR$/oop-practices" />
             <option value="$PROJECT_DIR$/oop-practices03" />
-            <option value="$PROJECT_DIR$/oop-practices04" />
-            <option value="$PROJECT_DIR$/servlet" />
-            <option value="$PROJECT_DIR$/was-practices" />
           </set>
         </option>
       </GradleProjectSettings>
