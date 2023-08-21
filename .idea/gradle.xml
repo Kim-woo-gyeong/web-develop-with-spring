@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,9 +9,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/di-practice" />
+            <option value="$PROJECT_DIR$/jdbc-practice" />
+            <option value="$PROJECT_DIR$/mvc-practice" />
             <option value="$PROJECT_DIR$/object-oriented-practice02" />
             <option value="$PROJECT_DIR$/oop-practices" />
             <option value="$PROJECT_DIR$/oop-practices03" />
+            <option value="$PROJECT_DIR$/oop-practices04" />
+            <option value="$PROJECT_DIR$/servlet" />
+            <option value="$PROJECT_DIR$/was-practices" />
           </set>
         </option>
       </GradleProjectSettings>

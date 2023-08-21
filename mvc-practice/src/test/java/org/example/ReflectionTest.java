@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.annotation.Controller;
-import org.example.annotation.Service;
 import org.example.model.User;
+import org.example.mvc.annotation.Controller;
+import org.example.mvc.annotation.Service;
 import org.junit.jupiter.api.Test;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
